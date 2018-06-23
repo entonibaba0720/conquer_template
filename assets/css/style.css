@@ -1,0 +1,698 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Allura|PT+Sans:400,700|Sura:400,700');
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    /* Fonts */
+    --sans-serif: 'PT Sans', sans-serif;
+    --serif: 'Sura', serif;
+}
+
+body {
+    font-family: var(--sans-serif);
+}
+
+
+/* Navbar */
+
+#nav {
+    display: none;
+}
+
+.menu-toggle {
+    right: 20px;
+    top: 10px;
+    background-color: #383E4C;
+    opacity: 0.8;
+    color: #fff;
+    display: inline-block;
+    padding: .6rem;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 4;
+}
+
+.fa-bars {
+    font-size: 1.6rem;
+}
+
+
+/* Home section */
+
+#home {
+    height: 100vh;
+    background-size: cover;
+    z-index: 1;
+    background-image: url(https://res.cloudinary.com/fluffydog/image/upload/v1529063923/amber-teasley-369443-unsplash.jpg);
+}
+
+.title span {
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-size: 4rem;
+    letter-spacing: .4rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    line-height: 3rem;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+
+/* About section */
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border: 0;
+    height: auto;
+}
+
+.card {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    width: 50vw;
+    margin-bottom: 2em;
+    width: 70%;
+}
+
+.card-description {
+    text-align: center;
+    margin: 0 auto;
+    color: #333;
+    line-height: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.card-content {
+    background-color: #e6e0e0;
+    width: 100%;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.feature-content-link-green-button {
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.feature-content-link-blue-button {
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.feature-content-link-red-button {
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.feature-content-title-green {
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.feature-content-title-blue {
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.feature-content-title-red {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#two-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100%;
+    margin-bottom: -1rem;
+}
+
+.columns {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+    width: 90%;
+    padding: 1rem;
+    color: #646d7c;
+}
+
+.two-colums-description {
+    text-align: center;
+    margin: 0 auto;
+    color: #646d7c;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.two-columns-content {
+    background-color: #e6e0e0;
+    width: 100%;
+    display: block;
+    padding-bottom: 1.5rem;
+}
+
+.two-colums-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.btn {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #646d7c;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #646d7c;
+    text-decoration: none;
+}
+
+.two-columns-content:last-child {
+    padding-bottom: 2.5rem;
+}
+
+
+/* SERVICES */
+
+.services-content {
+    background-image: url(https://res.cloudinary.com/fluffydog/image/upload/c_scale,w_1880/v1526739370/irina-kostenich-497161-unsplash.jpg);
+    background-size: cover;
+    z-index: 1;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 2rem;
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+.services-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    padding-top: 4rem;
+}
+
+.services-description {
+    width: 90%;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: white;
+    margin: 0 auto;
+    line-height: 1.7rem;
+    padding-top: 2rem;
+}
+
+.four-columns-container {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 2rem;
+}
+
+.item-1,
+.item-2 {
+    grid-row-start: 1;
+    background-color: #e6e0e0;
+    margin: 0 auto;
+    font-size: .8rem;
+}
+
+.item-3,
+.item-4 {
+    grid-row-start: 2;
+    background-color: #e6e0e0;
+    margin: 0 auto;
+    font-size: .8rem;
+    justify-content: center;
+}
+
+.four-columns-title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #646d7c;
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+
+.four-columns-description {
+    margin: 0 auto;
+    color: #646d7c;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    width: 90%;
+    overflow: hidden;
+}
+
+.four-columns-btn {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #646d7c;
+    cursor: pointer;
+    display: block;
+    margin: 1.4rem auto;
+}
+
+.four-columns-btn a {
+    text-decoration: none;
+    color: #646d7c;
+}
+
+#one-big-column {
+    clear: both;
+    padding-top: 2rem;
+}
+
+.one-big-column-title {
+    font-size: 1.3rem;
+    color: #59595a;
+    font-weight: bold;
+    padding-top: 3rem;
+    margin-left: 1.2rem;
+}
+
+.one-big-column-content {
+    background-color: #e6e0e0;
+    width: 90%;
+    display: block;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    font-size: .9rem;
+}
+
+.one-big-column-description {
+    color: #59595a;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.one-big-column-btn {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #646d7c;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.one-big-column-btn a {
+    text-decoration: none;
+    color: #646d7c;
+}
+
+
+/* CONTACT */
+
+#contact {
+    padding-top: 2rem;
+    height: 100%;
+    background-image: url(http://res.cloudinary.com/fluffydog/image/upload/c_scale,w_1924/v1529060479/lou-levit-1777-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 3rem;
+}
+
+.contact-content {
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.contact-description {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background: none 0px 0px repeat scroll rgba(242, 242, 242, 0.4);
+    border-radius: 5px;
+    padding: 20px 15px;
+    width: 90%;
+    line-height: 1.5rem;
+    margin: 2rem auto;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.name,
+.email,
+.subject,
+.message {
+    background: none 0px 0px repeat scroll rgba(242, 242, 242, 0.7);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    align-content: center;
+    padding: .7rem;
+    margin-bottom: .7rem;
+}
+
+.form-control {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.btn-submit {
+    background-color: #383E4C;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    margin-top: .8rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5%;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin: 2rem;
+    text-align: center;
+    color: #646d7c;
+}
+
+@media (min-width: 780px) {
+    #nav {
+        display: block;
+        padding: 1.5rem;
+        background-color: #383E4C;
+        width: 100vw;
+        position: absolute;
+        left: 0px;
+        text-align: center;
+        position: fixed;
+        z-index: 3;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        border: 1px solid #646d7c;
+        padding: 1rem;
+        margin-right: 2rem;
+        background-color: #383E4C;
+    }
+    .navbar li a:hover {
+        background-color: #646d7c;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    #about {
+        display: flex;
+    }
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        flex: 1;
+        width: 30%;
+        justify-content: center;
+    }
+    .thumbnail {
+        width: 100%;
+        align-self: flex-start;
+        flex-shrink: 0;
+    }
+    .card-description,
+    .feature-content-title-green,
+    .feature-content-title-blue,
+    .feature-content-title-red {
+        text-align: left;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .feature-content-link-blue-button,
+    .feature-content-link-green-button,
+    .feature-content-link-red-button {
+        margin-top: auto;
+        margin: auto;
+        display: block;
+        width: 60%;
+    }
+    .columns {
+        width: 50%;
+    }
+    .four-columns-container {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4 {
+        grid-row-start: 1;
+        width: 90%;
+    }
+    #one-big-column {
+        padding-bottom: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .one-big-column-btn {
+        margin-left: 3rem;
+    }
+    .contact-content {
+        width: 60%;
+    }
+    .form-control {
+        display: grid;
+        grid-column-gap: 1rem;
+    }
+    .name {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .email {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .message {
+        grid-column: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .btn-submit {
+        position: relative;
+        left: 47%;
+        width: 6rem;
+    }
+}
