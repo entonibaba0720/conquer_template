@@ -660,7 +660,7 @@ footer {
     .item-3,
     .item-4 {
         grid-row-start: 1;
-        width: 80%;
+        width: calc(80%-3rem);
     }
     #one-big-column {
         padding-bottom: 1rem;
