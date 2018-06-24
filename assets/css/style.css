@@ -652,7 +652,7 @@ footer {
         width: 50%;
     }
     .four-columns-container {
-        width: 80%;
+        width: 74%;
         margin: 2rem auto;
     }
     .item-1,
@@ -660,7 +660,7 @@ footer {
     .item-3,
     .item-4 {
         grid-row-start: 1;
-        width: calc(80%-3rem);
+        width: 80%;
     }
     #one-big-column {
         padding-bottom: 1rem;
