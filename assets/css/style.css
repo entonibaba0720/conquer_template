@@ -626,16 +626,15 @@ footer {
 
 @media (min-width: 780px) {
     #nav {
-        display: block;
         padding: 1.5rem;
         background-color: #383E4C;
         width: 100vw;
-        left: 0px;
         text-align: center;
-        position: relative;
         z-index: 3;
         transition: none;
-        margin-top: 0;
+        top: 0;
+        left: 0;
+        position: fixed;
     }
     .navbar {
         display: flex;
