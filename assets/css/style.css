@@ -235,7 +235,7 @@ nav ul li a {
     text-transform: uppercase;
     color: #fff;
     text-shadow: 2px 2px rgb(0, 0, 0);
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: .4rem;
 }
 
@@ -419,7 +419,8 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 50vh;
+    height: 70vh;
+    overflow: hidden;
 }
 
 .services-title {
@@ -714,6 +715,9 @@ footer {
     }
     .one-big-column-btn {
         margin-left: 3rem;
+    }
+    .services-content {
+        width: 100%;
     }
     .contact-content {
         width: 60%;
