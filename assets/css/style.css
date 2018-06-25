@@ -443,7 +443,6 @@ img {
 .four-columns-container {
     display: grid;
     grid-column-gap: 30px;
-    grid-row-gap: 30px;
     margin: 0 auto;
     grid-template-columns: auto auto;
     width: 80%;
@@ -631,10 +630,9 @@ footer {
         padding: 1.5rem;
         background-color: #383E4C;
         width: 100vw;
-        position: absolute;
         left: 0px;
         text-align: center;
-        position: fixed;
+        position: relative;
         z-index: 3;
         transition: none;
         margin-top: 0;
@@ -696,15 +694,19 @@ footer {
         width: 50%;
     }
     .four-columns-container {
+        display: grid;
+        grid-column-gap: 30px;
+        margin: 0 auto;
+        grid-template-columns: auto auto auto auto;
         width: 74%;
-        margin: 2rem auto;
     }
     .item-1,
     .item-2,
     .item-3,
     .item-4 {
-        grid-row-start: 1;
         width: 80%;
+        justify-content: center;
+        margin: 2rem auto;
     }
     #one-big-column {
         padding-bottom: 1rem;
