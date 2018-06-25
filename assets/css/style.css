@@ -635,6 +635,7 @@ footer {
         position: fixed;
         z-index: 3;
         transition: none;
+        margin-top: 0;
     }
     .navbar {
         display: flex;
