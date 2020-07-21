@@ -1,3 +1,5 @@
+This was an old project (2018) and now I see the errors in the layout, but this is a part of my coding journey and I don't mind it. :) 
+
 # Conquer template  
 
 This is the perfect project for beginners.
